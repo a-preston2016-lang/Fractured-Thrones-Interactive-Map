@@ -1,0 +1,138 @@
+#map {
+    background-image: url("images/FTAuzeraWorldMap.png");
+    width: 1510px;
+    height: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    position: relative;
+    background-size: cover;
+    background-size: contain;
+    background-size: 1510px 1408px;
+      }
+ 
+#map a{
+    display: block;
+    border: 5px solid #FF2;
+    position:absolute
+      }
+
+a#Arilaand {width: 260px;height: 50px; left: 904px;top: 648px;opacity: 0;}
+a#Haeloth {width: 246px;height: 50px; left: 685px;top: 114px;opacity: 0;}
+a#Gradia {width: 210px;height: 64px; left: 210px;top: 910px;opacity: 0;}
+a#Eshma_Thalas {width: 390px;height: 64px; left: 720px;top: 1030px;opacity: 0;}
+a#Vurnfalduhr {width: 64px;height: 64px; left: 368px;top: 173px;opacity: 0;}
+a#Theozzian_Empire {width: 64px;height: 64px; left: 368px;top: 173px;opacity: 0;}
+a#Agmurdrod {width: 64px;height: 64px; left: 368px;top: 173px;opacity: 0;}
+a#Moro-Gorath {width: 375px;height: 64px; left: 100px;top: 130px;opacity: 0;}
+
+header {   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #111; /* Optional styling */
+    color: #fff;
+}
+
+.Logo {
+    height: 20px; /* Adjust as needed */
+    width: auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Background behind the column */
+.container {
+    height: 100vh;
+    background: url('images/FTAuzeraWorldMap.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;  /* centers horizontally */
+    align-items: center;      /* centers vertically */
+    padding: 16px;            /* prevents column from touching screen edges */
+    box-sizing: border-box;
+}
+
+/* Centered vertical column */
+.vertical-column {
+    width: 100%;                      /* take available width... */
+    max-width: 400px;                 /* ...but never exceed this */
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.145);  /* transparent black */
+    backdrop-filter: blur(6px);       /* optional glass blur */
+    border-radius: 12px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Optional: tweak spacing/fonts on smaller screens */
+@media (max-width: 480px) {
+    .vertical-column {
+        padding: 16px;
+        border-radius: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Optional: make the column less tall on very short screens */
+@media (max-height: 600px) {
+    .container {
+        align-items: flex-start;
+        padding-top: 24px;
+    }
+}
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;             /* ⬅ allows items to wrap */
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #111;
+    padding: 10px 0;
+    gap: 10px;                   /* optional: spacing between wrap rows */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;                 /* white works better on dark bg */
+    font-weight: bold;
+    padding: 5px 10px;           /* clickable area */
+    white-space: nowrap;         /* ⬅ prevents weird mid-word line breaks */
+}
+
+
+
+
+a:link {
+    color: #ffffff; /* Unvisited link */
+}
+a:visited {
+    color: #b3b3b3; /* Visited link */
+}
+a:hover {
+    color: rgb(0, 238, 255); /* Mouse over link */
+}
+
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+}
